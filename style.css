@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quote-box {
+    background-color: #e8f5fd; /* Very light tweet color box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-size: 20px;
+    color: #1DA1F2; /* Light tweet color */
+    background-color: transparent; /* No background color for the quote */
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #1DA1F2; /* Light tweet color border */
+    margin: 0 0 20px 0;
+}
+
+#author {
+    display: block;
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#new-quote {
+    background-color: #1DA1F2; /* Light tweet color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#new-quote:hover {
+    background-color: #0d8ddb; /* Slightly darker tweet color for hover */
+}
+
+#tweet-quote img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#tweet-quote img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    blockquote {
+        font-size: 18px;
+    }
+
+    #new-quote {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
